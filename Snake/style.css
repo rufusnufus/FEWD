@@ -1,20 +1,101 @@
+body {
+  background-color: #836953;
+  margin: 0;
+  max-width: 100%;
+}
+
+header {
+  background: white;
+  padding: 20px;
+  border-bottom: 1px;
+  border-bottom-color: #704214;
+  border-bottom-width: 10px;
+}
+
+header > h1 {
+  color: #704214;
+  text-align: center;
+  font-family: Asap, sans-serif;
+}
+
+button {
+  display: inline-block;
+  padding: 0.5em 1.2em;
+  border: 2px solid #FFFFFF;
+  font-size: 1vw;
+  margin: 20px auto;
+  border-radius:0.12em;
+  box-sizing: border-box;
+  font-family:'Asap',sans-serif;
+  font-weight: bold;
+  color:#FFFFFF;
+  background-color: #836953;
+  text-align:center;
+  transition: all 0.2s;
+}
+
+button:hover{
+  color:#704214;
+  background-color:#FFFFFF;
+}
+
+.game-controller {
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.result {
+  font-size: 40px;
+  color: white;
+}
+
+.result > p {
+  text-align: center;
+  font-weight: bold; 
+  font-family: Asap, sans-serif;
+}
+
 .grid {
-  width: 200px;
-  height: 200px;
+  background-color: #90EE90;
+  width: 400px;
+  height: 400px;
   display: flex;
   flex-wrap: wrap;
   border-style: solid;
+  border-color: #704214;
+  margin: 0 auto;
 }
 
 .grid div {
+  box-sizing: border-box;
   width: 20px;
   height: 20px;
+  position: relative;
+  border-style: solid;
+  border-color: #50C878;
+  border-width: 1px;
 }
 
 .snake {
-  background-color: blue;
+  background-color: darkgreen;
 }
 
+
 .apple {
-  background-color: purple;
+	background-size: cover;
+	background-image: url(images/apple.png);
+}
+
+.score {
+  margin: 20px auto;
+  border: 3px solid white;
+  border-radius: 4px;
+  text-align: center;
+  width: 200px;
+  color: white;
+  font-size: 35px;
+  padding: 10px 15px;
+  font-family: Asap, sans-serif;
+  position: relative;
 }
