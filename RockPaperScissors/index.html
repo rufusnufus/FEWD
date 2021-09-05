@@ -1,12 +1,12 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Rock Paper Scissors Game</title>
+        <title>Rock Paper Scissors Lizard Spock Game</title>
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
         <header>
-            <h1>Rock Paper Scissors</h1>
+            <h1>Rock Paper Scissors Lizard Spock</h1>
         </header>
         <div class="score-board">
             <div id="user-label" class="badge">user</div>
@@ -25,12 +25,24 @@
             <div class="choice" id="p">
                 <img src="images/paper.png" alt="paper">
             </div>
-            <div class="choice" id="s">
+            <div class="choice" id="sc">
                 <img src="images/scissors.png" alt="scissors">
+            </div>
+            <div class="choice" id="l">
+                <img src="images/lizard.png" alt="lizard">
+            </div>
+            <div class="choice" id="sp">
+                <img src="images/spock.png" alt="spock">
             </div>
         </div>
 
         <p id="action-message">Make your move.</p>
+        <div class="rules">
+            <button onclick="toggleRules()" class="rules-button" alt="Show Rules"></button>
+            <div class='rules-image' style="display: none;">
+                <img src="images/rules.png" alt="rules">
+            </div>
+        </div>
         <script src="app.js" charset="utf-8"></script>
     </body>
 </html>
